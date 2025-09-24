@@ -1,0 +1,143 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Form container */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Text inputs and textareas */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+/* Radio buttons container */
+.radio-group {
+    margin-bottom: 20px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Readonly fields */
+input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Submit and Reset buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Form group to contain label, input, and error */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.err {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px; /* Add a small margin to ensure spacing between input and error */
+}
+
+/* Custom styling for upload label */
+.upload {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Image preview styling */
+#imagePreview {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form {
+        padding: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    textarea {
+        font-size: 14px;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+video#vid{
+    width: 540px;
+    height: 480px;
+  }

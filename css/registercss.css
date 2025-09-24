@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+ 
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.upload {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px dashed #ddd;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="reset"] {
+  background-color: #6c757d;
+  margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+  background-color: #545b62;
+}
+
+button[type="submit"] {
+  background-color: #0a9f90;
+  margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0cd0bd;
+}
+
+.err {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Webcam buttons */
+#startWebcam,
+#capturePhoto,
+#stopWebcam {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form {
+      padding: 20px;
+  }
+  
+  .upload {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+video#vid{
+  width: 440px;
+  height: 480px;
+}

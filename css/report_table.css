@@ -1,0 +1,23 @@
+
+.salesTable {
+    margin-top: 20px;
+    text-align: center;
+ }
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+ }
+ th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+ }
+ th {
+    background-color: #3498db;
+    color: white;
+ }
+ tfoot td {
+    font-weight: bold;
+    background-color: #f2f2f2;
+ }
+ 

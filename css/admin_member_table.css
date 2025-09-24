@@ -1,0 +1,162 @@
+/* Table Styles */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Header */
+thead {
+    background-color: #f2f2f2;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Table Body */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.member-img {
+    width: 50px;
+    height: auto; 
+}
+
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #e6f3ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Action Links */
+td a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Actions Container */
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Search Input Field */
+.actions-container input[type="search"] {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.actions-container input[type="search"]:focus {
+    border-color: #3498db;
+}
+
+/* Search Button */
+.actions-container button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.actions-container button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Add Member Button */
+.actions-container .add-member-btn {
+    padding: 10px 20px;
+    background-color: #1c82db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.actions-container .add-member-btn:hover {
+    background-color: #4ea7f0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+}
