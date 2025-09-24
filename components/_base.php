@@ -521,10 +521,10 @@ function update_cart($id, $unit) {
 // Database Setups and Functions
 // ============================================================================
 
-/*
+
 try {
     $_db = new PDO(
-        "mysql:host=rds-stack-myrdsinstance-iaphxerfkway.cng5rlrnyzca.us-east-1.rds.amazonaws.com;dbname=ecommerce;charset=utf8mb4",
+        "mysql:host=rds-stack-myrdsinstance-36ex8exjypis.clwuwmwwkvk4.us-east-1.rds.amazonaws.com;dbname=ecommerce;charset=utf8mb4",
         "admin",
         "admin123*",
         [
@@ -535,24 +535,6 @@ try {
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
-
-*/
-
-try {
-    $_db = new PDO(
-        "mysql:host=localhost;dbname=wis;charset=utf8mb4", // 本地数据库连接
-        "root",  // XAMPP 默认的用户名是 root
-        "",  // 如果没有设置密码则为空
-        [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        ]
-    );
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
-}
-
-
 
 
 
